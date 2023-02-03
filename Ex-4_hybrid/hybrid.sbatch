@@ -13,6 +13,7 @@
 module load openmpi
 
 make -f Makefile
+ulimit -l unlimited
 
 # Set OMP_NUM_THREADS to the number of CPUs per task we asked for.
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK

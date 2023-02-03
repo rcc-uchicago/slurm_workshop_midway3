@@ -13,7 +13,7 @@
 
 module load openmpi
 make -f Makefile
-
+ulimit -l unlimited
 #Run your code
 mpirun  ./mpi_prog 
 
